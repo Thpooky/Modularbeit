@@ -1,0 +1,31 @@
+body, html {
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    width: 100%; /* Breite des Bereichs anpassen */
+    height: 100%; /* Höhe des Bereichs anpassen */
+    overflow: hidden; /* Hide scrollbars */
+    display: flex; /* Display the body in a column */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    font-family: 'Montserrat', sans-serif; /* Change font family */
+}
+.grid-container {
+    display: grid; /* Display the images in a grid */
+    grid-template-columns: 1fr 1fr; /* Create two columns */
+    grid-template-rows: 1fr 1fr;    /* Create two rows */
+    gap: 0; /* Remove any gap */
+    width: 100vw; /* Ensure the grid container fills the viewport width */
+    height: 100vh; /* Ensure the grid container fills the viewport height */
+}
+.grid-item {
+    width: 100%; /* Fill the whole area */
+    height: 100%; /* Fill the whole area */
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+}
+.grid-item img {
+    width: 100%; /* Cover the whole area */
+    height: 100%; /* Cover the whole area */
+    object-fit: cover; /* Ensure the images fill the grid cells */
+    display: block; /* Remove any inline spacing */
+}

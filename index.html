@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gruppe 22 - Die Queens</title>
+    <link rel="stylesheet" href="styles/styleIndex.css">
+</head>
+<body>
+  <div class="menu-button" onclick="toggleMenu()">Menu</div>
+  <!-- Menübutton zum aufklappen den Menüs-->
+  <div class="popup-menu" id="popupMenu">
+    <!-- Menü mit den Links zu den Unterseiten -->
+    <a href="#" class="button" onclick="loadPage('landingPage.html'); return false">Home</a>
+    <a href="#" class="button" onclick="loadPage('KiLanding.html'); return false">KI</a>    
+    <a href="#" class="button" onclick="loadPage('grouplanding.html'); return false">Queens</a>
+    <!--
+    <a href="#" class="button" onclick="loadPage('sonja.html'); return false">Sonja</a>
+    <a href="#" class="button" onclick="loadPage('theresa.html'); return false">Theresa</a>
+    <a href="#" class="button" onclick="loadPage('christina.html'); return false">Christina</a>
+    <a href="#" class="button" onclick="loadPage('elisabeth.html'); return false">Eli</a>
+    -->
+</div>
+
+  <iframe id="subloader" src="landingPage.html" class="content" type="application/pdf"></iframe>
+    <!-- Inhalt wird in einem Iframe geladen -->
+ <script>
+    // JavaScript, um das Menü aufzuklappen
+    function toggleMenu() {
+      const menu = document.getElementById('popupMenu'); // Get the menu
+      if (menu.style.display === 'none' || menu.style.display === '') { // Check if menu is hidden
+        menu.style.display = 'flex'; // Show menu
+      } else {
+        menu.style.display = 'none'; // Hide menu
+      }
+    }
+    // JavaScript, um die Unterseiten zu laden
+    function loadPage(page) {
+        const subloader = parent.document.getElementById("subloader"); // Get the iframe
+        subloader.src = page; // Load the page
+        document.getElementById('popupMenu').style.display = 'none'; // Hide menu after selection
+    }
+  </script>
+</body>
+</html>

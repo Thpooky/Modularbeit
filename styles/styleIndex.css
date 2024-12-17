@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box; /* Add box-sizing: border-box to all elements */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+  }
+
+  body {
+    font-family: Arial, sans-serif; /* Change font family */
+    background-color: #ae814b; /* Change background color */
+    display: flex;    /* Display the body in a column */
+    flex-direction: column; /* Display the body in a column */
+    align-items: center; /* Center the content horizontally */
+    height: 100vh; /* Ensure body height is 100% of the viewport height */
+    overflow: hidden; /* Prevent scrolling */
+  }
+
+  .button {
+    padding: 10px 20px; /* Change padding */
+    font-size: 1em; /* Change font size */
+    color: #fff; /* Change text color */
+    text-decoration: none; /* Remove underline */
+    background-color: #fa5e5e; /* Change background color */
+    border-radius: 5px; /* Change border radius */
+    transition: background-color 0.3s ease; /* Add transition */
+  }
+
+  .button:hover {
+    background-color: #00408d; /* Change background color on hover */
+  }
+
+  /* Inhalt mit Abstand zur Navbar */
+  .content {
+    margin-top: 0; /* Remove margin to eliminate white space */
+    width: 100%; /* Breite des Bereichs anpassen */
+    height: 100vh; /* Höhe des Bereichs anpassen */
+    border: none; /* Remove border */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+  }
+  .login-container {
+    background-color: white; /* Change background color */
+    padding: 20px; /* Change padding */
+    border-radius: 8px; /* Change border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+  }
+
+  input {
+    width: 100%;  /* Breite des Bereichs anpassen */
+    padding: 10px; /* Change padding */
+    margin: 10px 0; /* Change margin */
+  }
+
+  button {
+    width: 100%; /* Breite des Bereichs anpassen */
+    padding: 10px; /* Change padding */
+    background-color: #007bff; /* Change background color */
+    color: white; /* Change text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Change border radius */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+
+  button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+  }
+
+  .menu-button {
+    position: absolute; /* Change to absolute to overlap subloader */
+    top: 10px; /* Change top position */
+    left: 10px; /* Change left position */
+    background-color: #fa5e5e; /* Change background color */
+    color: #fff; /* Change text color */
+    padding: 10px 20px; /* Change padding */
+    border-radius: 5px; /* Change border radius */
+    cursor: pointer; /* Change cursor to pointer */
+    z-index: 1001; /* Ensure the button is on top */
+  }
+
+  .popup-menu {
+    display: none; /* Hide the menu by default */
+    position: fixed; /* Change to fixed to position the menu */
+    top: 50px; /* Change top position */
+    left: 10px; /* Change left position */
+    background-color: #fff; /* Change background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);     /* Add shadow */
+    border-radius: 5px; /* Change border radius */
+    z-index: 1001; /* Ensure the menu is on top */
+    flex-direction: column; /* Display the menu in a column */
+    gap: 10px; /* Add gap between items */
+    padding: 10px; /* Change padding */
+  }
+
+  .popup-menu .button {
+    background-color: #fa5e5e; /* Change background color */
+    color: #fff; /* Change text color */
+    padding: 10px;    /* Change padding */
+    text-align: center; /* Center the text */
+    border-radius: 5px; /* Change border radius */
+    text-decoration: none; /* Remove underline */
+  }
+
+  .popup-menu .button:hover {
+    background-color: #00408d; /* Change background color on hover */
+  }

@@ -1,0 +1,79 @@
+.headline {
+    font-weight: bold; /* Make the headline bold */
+    font-size: 5rem; /* Change font size */
+    margin-top: 50px; /* Adjusted margin-top */
+    text-align: center; /* Center the headline horizontally */
+    font-family: 'Courier New', Courier, monospace; /* Change font */
+}
+
+.image-container {
+    display: flex;  /* Display the images in a row */
+    justify-content: space-around;  /* Space the images evenly */
+    margin: 20px;   /* Add margin */
+    position: absolute; /* Position the images */
+    bottom: 0;  /* Position the images at the bottom */
+    width: 100%;    /* Make the images full width */
+}
+
+.flip-card {
+    background-color: transparent;  /* Make the background transparent */
+    width: 30vw; /* Adjusted width to be relative to the viewport width */
+    height: 30vw; /* Adjusted height to maintain 2.5:1 ratio */
+    perspective: 1000px;    /* Add perspective */
+    border: none;   /* Remove border */
+    transform: translateZ(0); /* Force hardware acceleration */
+    overflow: hidden; /* Prevent overflow issues */
+}
+
+.flip-card-inner {
+    position: relative; /* Position the inner card */
+    width: 100%;    /* Make the inner card full width */
+    height: 100%;   /* Make the inner card full height */
+    text-align: center; /* Center the content horizontally */
+    transition: transform 0.6s; /* Add transition effect */
+    transform-style: preserve-3d;   /* Preserve 3D transformations */
+    backface-visibility: hidden; /* Prevent backface rendering issues */
+    will-change: transform; /* Optimize rendering performance */
+    transform-origin: center; /* Ensure transform happens from the center */
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); /* Rotate the card on hover */
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute; /* Position the front and back cards */
+    width: 100%;    /* Make the cards full width */
+    height: 100%;   /* Make the cards full height */
+    backface-visibility: hidden;    /* Prevent backface rendering issues */
+}
+
+.flip-card-front {
+    background-color: #bbb; /* Change background color */
+    color: black;   /* Change text color */
+}
+
+.flip-card-back {
+    background-color: white;    /* Change background color */
+    color: white;   /* Change text color */
+    transform: rotateY(180deg);     /* Rotate the back card */
+    display: flex;  /* Display the content in a row */
+    justify-content: center;    /* Center the content horizontally */
+    align-items: center;        /* Center the content vertically */
+    border: none; /* Remove blue border */
+}
+
+.flip-card-image {
+    width: 100%;    /* Make the image full width */
+    height: 100%;   /* Make the image full height */
+    object-fit: cover;  /* Cover the whole area */
+}
+
+textarea {
+    width: 90%; /* Adjusted width */
+    height: 90%; /* Adjusted height */
+    resize: none; /* Disable resizing */
+    font-family: 'Courier New', Courier, monospace; /* Change font */
+    font-size: 1.5rem; /* Change font size */
+    
+}

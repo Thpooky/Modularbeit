@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KiLanding</title>
+    <link rel="stylesheet" href="styles/styleKiLanding.css">
+</head>
+<body>
+    <div class="image-container">
+        <img src="source/KiLanding.jpg" alt="Descriptive Alt Text" style="width: 100%; height: 100%; object-fit: cover;">
+        <div class="textbox">Image with overlaying textbox</div>
+    </div>
+    <div class="subloaders">
+        <div class="subloader">
+            <img src="source/Ki1.jpg" alt="Prefilled Image 1">
+            <button onclick="loadSubloader(0, 'Ki1.html')">Zeige KI1</button>
+        </div>
+        <div class="subloader">
+            <img src="source/Ki2.jpeg" alt="Prefilled Image 2">
+            <button onclick="loadSubloader(1, 'Ki2.html')">Zeige KI2</button>
+        </div>
+    </div>
+    <script>
+        // Function to load the subloader content
+        function loadSubloader(index, page) {
+            const subloaders = document.getElementsByClassName('subloader'); // Get all subloaders
+            if (subloaders[index]) { // Check if the subloader with index exists
+                subloaders[index].classList.add('no-overlay'); // Remove the overlay
+                subloaders[index].innerHTML = `<iframe src="${page}" style="width: 100%; height: 100%; border: none;"></iframe>`; // Load the page into the subloader
+            }
+        }
+    </script>
+</body>
+</html>

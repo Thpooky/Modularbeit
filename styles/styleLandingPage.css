@@ -1,0 +1,37 @@
+body, html {
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    width: 100%; /* Breite des Bereichs anpassen */
+    height: 100%; /* Höhe des Bereichs anpassen */
+    overflow: hidden; /* Hide scrollbars */
+}
+.container {
+    display: flex; /* Display the images in a row */
+    width: 100%; /* Breite des Bereichs anpassen */
+    height: 100%; /* Höhe des Bereichs anpassen */
+    position: relative; /* Position the text */ 
+}
+.container a {
+    flex: 1; /* Fill the whole area */
+    position: relative; /* Position the text */
+}
+.container img {
+    width: 100%; /* Cover the whole area */
+    height: 100%; /* Cover the whole area */
+    object-fit: cover; /* Cover the whole area */
+}
+.overlay-text {
+    position: absolute;
+    top: 50%; /* Center the text vertically */
+    left: 10px; /* Change left padding */
+    right: 10px; /* Change right padding */
+    transform: translateY(-50%); /* Center the text vertically */
+    color: white; /* Change text color */
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    padding: 10px; /* Change padding */
+    border-radius: 5px; /* Change border radius */
+    font-family: 'Montserrat', sans-serif; /* Change font family (Roboto, Open Sans, Lato, Montserrat, Raleway, Poppins, Source Sans Pro, Nunito, Ubuntu, Merriweather*/
+    font-size: 5rem; /* Change font size */
+    color: white; /* Change text color */
+    text-align: center; /* Center the text */
+}

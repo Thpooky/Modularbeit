@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Landing Page</title>
+    <link rel="stylesheet" href="styles/styleGroupLanding.css">
+</head>
+<body>
+    <div class="grid-container">
+        <a href="christina.html" class="grid-item">
+            <img src="source/sonja.jpeg" alt="Christina">
+        </a>
+        <a href="elisabeth.html" class="grid-item">
+            <img src="source/christina.jpeg" alt="Elisabeth">
+        </a>
+        <a href="sonja.html" class="grid-item">
+            <img src="source/elisabeth.jpeg" alt="Sonja">
+        </a>
+        <a href="theresa.html" class="grid-item">
+            <img src="source/theresa.jpeg" alt="Theresa">
+        </a>
+    </div>
+    <script>
+        // Resize the grid items to fill the viewport
+        function resizeGridItems() {
+            const gridItems = document.querySelectorAll('.grid-item img'); // Get all grid items
+            gridItems.forEach(item => { // Loop through each grid item
+                item.style.width = window.innerWidth / 2 + 'px'; // Set the width to half the viewport width
+                item.style.height = window.innerHeight / 2 + 'px'; // Set the height to half the viewport height
+            });
+        }
+        window.addEventListener('resize', resizeGridItems); // Call the function when the window is resized
+        window.addEventListener('load', resizeGridItems); // Call the function when the page is loaded
+    </script>
+</body>
+</html>
