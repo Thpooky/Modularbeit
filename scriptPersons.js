@@ -4,3 +4,4 @@ document.querySelectorAll('.flip-card').forEach(card => { // Select all flip car
         card.querySelector('.flip-card-inner').classList.toggle('flipped'); // Toggle the flipped class
     });
 });
+

@@ -7,39 +7,77 @@
     <title>Theresa's Profile</title>
 </head>
 <body>
-    <h1 class="headline">Theresa</h1>
+    <div class="header-container">
+        <img src="source/clickme.png" alt="Logo" class="header-image">
+        <h1 class="headline" id="secret-button">THERESA</h1>
+    </div>
     <div class="image-container">
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="source/theresaimage1.jpg" alt="Image 1" class="flip-card-image">
+                    <img src="source/theresa1_1.jpg" alt="Image 1" class="flip-card-image">
                 </div>
                 <div class="flip-card-back">
-                    <textarea readonly>Premade text for Image 1</textarea>
+                    <textarea readonly>Mein Hund: Ich heiße Theresa Schmidt, bin 20 Jahre alt und komme aus Dachau. In meiner Freizeit verbringe ich viel Zeit mit meinem Sheltie Vito, mit dem ich gerne spazieren gehe und spiele. Ich genieße es, draußen in der Natur zu sein und mit ihm Zeit zu verbringen. Vito ist immer voller Energie und macht jeden Spaziergang besonders. Diese gemeinsame Zeit ist für mich ein wichtiger Ausgleich zum Alltag.</textarea>
                 </div>
             </div>
         </div>
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="source/theresaimage2.jpg" alt="Image 2" class="flip-card-image">
+                    <img src="source/theresa1_2.jpg" alt="Image 2" class="flip-card-image">
                 </div>
                 <div class="flip-card-back">
-                    <textarea readonly>Premade text for Image 2</textarea>
+                    <textarea readonly>Mein Hobby Kunst & Pinterest: Ein weiteres Hobby von mir ist Kunst, besonders das Malen auf Leinwand, was mir hilft, kreativ zu sein und zu entspannen. Ich finde es faszinierend, mit Farben und Formen zu experimentieren und eigene Werke zu schaffen. Eine App, die ich gerne vorstellen würde, ist Pinterest, eine Plattform, auf der Nutzer Ideen und Inspirationen teilen können. Auf Pinterest finde ich unendlich viele kreative Anregungen, von Kunst über DIY-Projekte bis hin zu Rezepten. Die App ist besonders hilfreich, um neue Techniken zu entdecken und meine eigenen Projekte zu planen.</textarea>
                 </div>
             </div>
         </div>
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="source/theresaimage3.jpg" alt="Image 3" class="flip-card-image">
+                    <img src="source/theresa1_3.jpg" alt="Image 3" class="flip-card-image">
                 </div>
                 <div class="flip-card-back">
-                    <textarea readonly>Premade text for Image 3</textarea>
+                    <textarea readonly>Schmuck: Mein letztes Hobby ist Schmuck, besonders Armreifen und Ringe, die ich gerne trage. Ich liebe es, mich mit Schmuck zu umgeben, da er jedes Outfit sofort aufwertet. Besonders gerne trage ich Silberschmuck, weil er zeitlos und vielseitig ist. Schmuck lässt mich meinen persönlichen Stil unterstreichen und gibt mir das Gefühl, mich selbst auszudrücken. Ich fühle mich viel wohler, wenn ich Schmuck trage, da er mir einfach mehr Selbstbewusstsein gibt.</textarea>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        let toggled = false;
+        document.getElementById('secret-button').addEventListener('click', () => {
+            const originalImages = [
+                'source/theresa1_1.jpg',
+                'source/theresa1_2.jpg',
+                'source/theresa1_3.jpg'
+            ];
+            const originalTexts = [
+                'Mein Hund: Ich heiße Theresa Schmidt, bin 20 Jahre alt und komme aus Dachau. In meiner Freizeit verbringe ich viel Zeit mit meinem Sheltie Vito, mit dem ich gerne spazieren gehe und spiele. Ich genieße es, draußen in der Natur zu sein und mit ihm Zeit zu verbringen. Vito ist immer voller Energie und macht jeden Spaziergang besonders. Diese gemeinsame Zeit ist für mich ein wichtiger Ausgleich zum Alltag.',
+                'Mein Hobby Kunst & Pinterest: Ein weiteres Hobby von mir ist Kunst, besonders das Malen auf Leinwand, was mir hilft, kreativ zu sein und zu entspannen. Ich finde es faszinierend, mit Farben und Formen zu experimentieren und eigene Werke zu schaffen. Eine App, die ich gerne vorstellen würde, ist Pinterest, eine Plattform, auf der Nutzer Ideen und Inspirationen teilen können. Auf Pinterest finde ich unendlich viele kreative Anregungen, von Kunst über DIY-Projekte bis hin zu Rezepten. Die App ist besonders hilfreich, um neue Techniken zu entdecken und meine eigenen Projekte zu planen.',
+                'Schmuck: Mein letztes Hobby ist Schmuck, besonders Armreifen und Ringe, die ich gerne trage. Ich liebe es, mich mit Schmuck zu umgeben, da er jedes Outfit sofort aufwertet. Besonders gerne trage ich Silberschmuck, weil er zeitlos und vielseitig ist. Schmuck lässt mich meinen persönlichen Stil unterstreichen und gibt mir das Gefühl, mich selbst auszudrücken. Ich fühle mich viel wohler, wenn ich Schmuck trage, da er mir einfach mehr Selbstbewusstsein gibt.'
+            ];
+            const newImages = [
+                'source/theresa2_1.jpg',
+                'source/theresa2_2.jpg',
+                'source/theresa2_3.jpg'
+            ];
+            const newTexts = [
+                'Das Flexbox-Layout hat mir besonders gut gefallen, weil es eine einfache Möglichkeit bietet, Elemente flexibel und präzise auszurichten. Es spart viel Zeit, da komplexe Layouts ohne aufwendige Positionierungen oder Floats erstellt werden können. Besonders praktisch fand ich die Anpassungsfähigkeit an verschiedene Bildschirmgrößen, was die Erstellung responsiver Designs erleichtert. Mit den Flex-Eigenschaften konnte ich die Größe von Elementen schnell steuern und so dynamische Layouts erstellen. Insgesamt hat Flexbox meine Arbeit deutlich effizienter und flexibler gemacht.',
+                'Im Modul Webtechnologien hat mir besonders gefallen, dass wir nach jeder Aufgabe, die wir erstellen mussten, einen Podcast dazu machen durften. Diese Praxis hat mir geholfen, das Gelernte besser zu reflektieren und zu festigen. Der lockere Umgang und die offene Atmosphäre im Kurs haben das Lernen zusätzlich angenehm gemacht. Die praktischen Übungen an der Uni gaben mir die Möglichkeit, mein Wissen direkt anzuwenden und zu vertiefen. Am meisten begeistert hat mich, dass ich jetzt tatsächlich in der Lage bin, eigenständig zu coden und komplexe Webprojekte umzusetzen.',
+                'Ich habe gelernt, wie man Visual Studio Code effektiv nutzt, um an Webprojekten zu arbeiten. Zudem habe ich verstanden, wie Webseiten aufgebaut sind und welche Strukturen für eine funktionierende Seite notwendig sind. Ich habe gelernt, wie man Webseiten designt und dabei auf Layouts, Farben und Benutzerfreundlichkeit achtet. Auch das Erstellen und Integrieren von Favicons in Webseiten wurde mir beigebracht. Insgesamt habe ich nun ein gutes Verständnis dafür, wie man von der Planung bis zur Umsetzung eine Webseite erstellt.'
+            ];
+
+            const images = toggled ? originalImages : newImages;
+            const texts = toggled ? originalTexts : newTexts;
+
+            document.querySelectorAll('.flip-card').forEach((card, index) => {
+                card.querySelector('.flip-card-front img').src = images[index];
+                card.querySelector('.flip-card-back textarea').textContent = texts[index];
+            });
+
+            toggled = !toggled;
+        });
+    </script>
     <script src="scriptPersons.js"></script>
 </body>
 </html>

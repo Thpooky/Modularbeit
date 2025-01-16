@@ -3,7 +3,21 @@
     font-size: 5rem; /* Change font size */
     margin-top: 50px; /* Adjusted margin-top */
     text-align: center; /* Center the headline horizontally */
-    font-family: 'Courier New', Courier, monospace; /* Change font */
+    font-family: 'Montserrat', sans-serif; /* Change font family */
+    color: rgb(255, 255, 255); /* Change text color */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Adjust gap as needed */
+}
+
+.header-image {
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    margin-top: 100px; /* Move the image down */
 }
 
 .image-container {
@@ -12,7 +26,7 @@
     margin: 20px;   /* Add margin */
     position: absolute; /* Position the images */
     bottom: 0;  /* Position the images at the bottom */
-    width: 100%;    /* Make the images full width */
+    width: 97%;    /* Make the images full width */
 }
 
 .flip-card {

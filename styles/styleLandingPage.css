@@ -23,15 +23,13 @@ body, html {
 .overlay-text {
     position: absolute;
     top: 50%; /* Center the text vertically */
-    left: 10px; /* Change left padding */
-    right: 10px; /* Change right padding */
-    transform: translateY(-50%); /* Center the text vertically */
-    color: white; /* Change text color */
-    /*background-color: rgba(0, 0, 0, 0.5);*/
+    left: 50%; /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Center the text */
+    color: #ff0000; /* Change text color */
     padding: 10px; /* Change padding */
-    border-radius: 5px; /* Change border radius */
-    font-family: 'Montserrat', sans-serif; /* Change font family (Roboto, Open Sans, Lato, Montserrat, Raleway, Poppins, Source Sans Pro, Nunito, Ubuntu, Merriweather*/
+    font-family: 'Montserrat', sans-serif; /* Change font family */
     font-size: 5rem; /* Change font size */
-    color: white; /* Change text color */
     text-align: center; /* Center the text */
+    font-weight: bold; /* Make the text bold */
+    display: inline-block; /* Make background fit the text */
 }

@@ -7,12 +7,15 @@
     <title>Elisabeth's Profile</title>
 </head>
 <body>
-    <h1 class="headline">Elisabeth</h1>
+    <div class="header-container">
+        <img src="source/clickme.png" alt="Logo" class="header-image">
+        <h1 class="headline" id="secret-button">ELISABETH</h1>
+    </div>
     <div class="image-container">
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="source/elisabethimage1.jpg" alt="Image 1" class="flip-card-image">
+                    <img src="source/elisabeth1_1.jpg" alt="Image 1" class="flip-card-image">
                 </div>
                 <div class="flip-card-back">
                     <textarea readonly>Premade text for Image 1</textarea>
@@ -22,7 +25,7 @@
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="source/elisabethimage2.jpg" alt="Image 2" class="flip-card-image">
+                    <img src="source/elisabeth1_2.jpg" alt="Image 2" class="flip-card-image">
                 </div>
                 <div class="flip-card-back">
                     <textarea readonly>Premade text for Image 2</textarea>
@@ -32,7 +35,7 @@
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="source/elisabethimage3.jpg" alt="Image 3" class="flip-card-image">
+                    <img src="source/elisabeth1_3.jpg" alt="Image 3" class="flip-card-image">
                 </div>
                 <div class="flip-card-back">
                     <textarea readonly>Premade text for Image 3</textarea>
@@ -40,6 +43,41 @@
             </div>
         </div>
     </div>
+    <script>
+        let toggled = false;
+        document.getElementById('secret-button').addEventListener('click', () => {
+            const originalImages = [
+                'source/elisabeth1_1.jpg',
+                'source/elisabeth1_2.jpg',
+                'source/elisabeth1_3.jpg'
+            ];
+            const originalTexts = [
+                'Premade text for Image 1',
+                'Premade text for Image 2',
+                'Premade text for Image 3'
+            ];
+            const newImages = [
+                'source/elisabeth2_1.jpg',
+                'source/elisabeth2_2.jpg',
+                'source/elisabeth2_3.jpg'
+            ];
+            const newTexts = [
+                'New text for Elisabeth Image 1',
+                'New text for Elisabeth Image 2',
+                'New text for Elisabeth Image 3'
+            ];
+
+            const images = toggled ? originalImages : newImages;
+            const texts = toggled ? originalTexts : newTexts;
+
+            document.querySelectorAll('.flip-card').forEach((card, index) => {
+                card.querySelector('.flip-card-front img').src = images[index];
+                card.querySelector('.flip-card-back textarea').textContent = texts[index];
+            });
+
+            toggled = !toggled;
+        });
+    </script>
     <script src="scriptPersons.js"></script>
 </body>
 </html>

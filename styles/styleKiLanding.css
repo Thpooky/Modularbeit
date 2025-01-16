@@ -16,17 +16,18 @@ body {
 .image-container .textbox {
     position: absolute;
     top: 50%; /* Center the text vertically */
-    left: 10px; /* Change left padding */
-    right: 10px; /* Change right padding */
+    left: 10%; /* Add space to the left border */
+    right: 10%; /* Add space to the right border */
     transform: translateY(-50%); /* Center the text vertically */
-    color: white; /* Change text color */
-    /*background-color: rgba(0, 0, 0, 0.5);*/
-    padding: 10px; /* Change padding */
-    border-radius: 5px; /* Change border radius */
+    color: #fff; /* Change text color */
+    padding: 20px; /* Add padding */
+    border-radius: 5px; /* Add rounded corners */
     font-family: 'Montserrat', sans-serif; /* Change font family (Roboto, Open Sans, Lato, Montserrat, Raleway, Poppins, Source Sans Pro, Nunito, Ubuntu, Merriweather*/
-    font-size: 5rem; /* Change font size */
-    color: white; /* Change text color */
-    text-align: center; /* Center the text */
+    font-size: 2rem; /* Change font size */
+    text-align: center; /* Center the text horizontally */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    width: auto; /* Fit the content */
+    max-width: 80%; /* Ensure it doesn't exceed the container width */
 }
 .subloaders {
     flex: 1; /* Fill the remaining space */

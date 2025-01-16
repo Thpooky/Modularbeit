@@ -6,7 +6,7 @@
 
   body {
     font-family: Arial, sans-serif; /* Change font family */
-    background-color: #ae814b; /* Change background color */
+    background-color: #302018; /* Change background color */
     display: flex;    /* Display the body in a column */
     flex-direction: column; /* Display the body in a column */
     align-items: center; /* Center the content horizontally */
@@ -17,9 +17,9 @@
   .button {
     padding: 10px 20px; /* Change padding */
     font-size: 1em; /* Change font size */
-    color: #fff; /* Change text color */
+    color: #000; /* Change text color */
     text-decoration: none; /* Remove underline */
-    background-color: #fa5e5e; /* Change background color */
+    background-color: #fff; /* Change background color */
     border-radius: 5px; /* Change border radius */
     transition: background-color 0.3s ease; /* Add transition */
   }
@@ -67,8 +67,8 @@
     position: absolute; /* Change to absolute to overlap subloader */
     top: 10px; /* Change top position */
     left: 10px; /* Change left position */
-    background-color: #fa5e5e; /* Change background color */
-    color: #fff; /* Change text color */
+    background-color: #fff; /* Change background color */
+    color: #000; /* Change text color */
     padding: 10px 20px; /* Change padding */
     border-radius: 5px; /* Change border radius */
     cursor: pointer; /* Change cursor to pointer */
@@ -79,9 +79,9 @@
     display: none; /* Hide the menu by default */
     position: fixed; /* Change to fixed to position the menu */
     top: 50px; /* Change top position */
-    left: 10px; /* Change left position */
-    background-color: #fff; /* Change background color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);     /* Add shadow */
+    left: 0px; /* Change left position */
+    /*background-color: #67676700; /* Change background color */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   /* Add shadow */
     border-radius: 5px; /* Change border radius */
     z-index: 1001; /* Ensure the menu is on top */
     flex-direction: column; /* Display the menu in a column */
@@ -90,8 +90,8 @@
   }
 
   .popup-menu .button {
-    background-color: #fa5e5e; /* Change background color */
-    color: #fff; /* Change text color */
+    background-color: #fff; /* Change background color */
+    color: #000; /* Change text color */
     padding: 10px;    /* Change padding */
     text-align: center; /* Center the text */
     border-radius: 5px; /* Change border radius */

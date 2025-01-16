@@ -22,10 +22,35 @@ body, html {
     height: 100%; /* Fill the whole area */
     margin: 0; /* Remove any margin */
     padding: 0; /* Remove any padding */
+    position: relative; /* Position the grid items relative to their container */
 }
 .grid-item img {
     width: 100%; /* Cover the whole area */
     height: 100%; /* Cover the whole area */
     object-fit: cover; /* Ensure the images fill the grid cells */
     display: block; /* Remove any inline spacing */
+}
+.grid-item .label {
+    position: absolute; /* Position the label absolutely within the grid item */
+    top: 100%; /* Center the label vertically */
+    left: 5%; /* Align the label to the left */
+    transform: translateY(-50%) rotate(-90deg); /* Center the label and rotate it 90 degrees */
+    transform-origin: left center; /* Set the origin for the rotation */
+    color: rgb(255, 0, 0); /* Set the text color to white */
+    padding: 5px; /* Add some padding */
+    font-size: 5em; /* Increase the font size */
+    white-space: nowrap; /* Prevent the text from wrapping */
+    font-weight: bold; /* Make the text bold */
+}
+.grid-item .label_right {
+    position: absolute; /* Position the label absolutely within the grid item */
+    top: 100%; /* Center the label vertically */
+    left: 95%; /* Align the label to the left */
+    transform: translateY(-50%) rotate(-90deg); /* Center the label and rotate it 90 degrees */
+    transform-origin: left center; /* Set the origin for the rotation */
+    color: #ff0000; /* Set the text color to white */
+    padding: 5px; /* Add some padding */
+    font-size: 5em; /* Increase the font size */
+    white-space: nowrap; /* Prevent the text from wrapping */
+    font-weight: bold; /* Make the text bold */
 }
